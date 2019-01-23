@@ -1,0 +1,38 @@
+<div class="top_margin">
+ <section id="single_dish">
+   <div class= "container-fluid dish_details">
+     <div class="row">
+       <div class="col-lg-3 col-md-3 col-sm-12 col-12 food_info">
+         <div class="food_inner">
+           <div class="food_info_left">
+             <div class="media">
+                <div class="media-body">
+                  <div class="name">
+                   <%= @dish.name %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 big_image">
+         <div class="single_item">
+           <figure>
+             <div class="card">
+               <div class="dish_image">
+                 <img class="card-img-top"><%= image_tag @dish.image.url, class: "image-size" %>
+                 <div class="rating"><%= image_tag("logos/heart.png") %><span><%= @dish.rating%></span><p class="votes">1 VOTE</p></div>
+                 <div class="dish_name"><%= @dish.name %></div>
+                 <div class="dish_price">Rs.<%= @dish.price%></div> 
+               </div> 
+               <div class="card-body">
+                 <p class="card-text"></p>
+               </div>
+             </div>
+           </figure>
+          </div>
+       </div>
+     </div>
+   </div>
+ </section>
+</div>

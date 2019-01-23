@@ -1,0 +1,54 @@
+<div class="content-top">
+  <div class="top">
+    <%= image_tag("logos/1.png") %>
+    <div class="sample">
+      <center>
+        <h2>
+          What do you <em>really</em> feel like? 
+       </h2>
+        <div class="search_dish">
+          <%= form_tag("/search", method: 'get') do %>
+            <%= text_field_tag :search, params[:search], class: "form-control text", placeholder: "Chips and burgers" %>
+            <%= submit_tag 'Search', name: nil, class: "btn btn-default" %>
+          <% end %>
+       </div>
+     </center>
+   </div>
+  </div> 
+ <div class="top_dishes">
+   <div class="container dish_card">
+		 <div class="row">
+        <h2 class="title">Top Rated Dishes</h2>
+        <div class="dish_list"> 
+          <% @dishes.each do |dish| %>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 dish_hover">
+           	  <figure>
+               <div class="card">
+            	    <div class="dish_image">
+                    <div class="inner">
+                     <img class="card-img-top"><%= link_to(image_tag(dish.image.url(:original),class:"image-size"), dish_path(dish)) %>
+                    </div>
+                   <div class="rating"><%= image_tag("logos/heart.png") %><span><%= dish.rating%></span><p class="votes">1 VOTE</p></div>
+                    <div class="dish_name"><%= dish.name %></div>
+                    <div class="dish_price">Rs.<%= dish.price%></div> 
+                  </div> 
+                  <div class="card-body">
+                    <p class="card-text">
+                     <% dish.restaurants.each do |restaurant| %>
+                       <p><%= restaurant.name %></p>
+                        <p><%= restaurant.address %></p>
+                     <% end %>
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          <% end %>
+        </div>
+      </div>
+   </div>
+ </div>
+</div>
+
+  
+

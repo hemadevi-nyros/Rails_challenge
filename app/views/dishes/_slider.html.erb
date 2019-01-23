@@ -1,0 +1,13 @@
+<%= form_with model: @dish, local: true do |form| %>
+  <div class="col-lg-1 col-md-2 col-xs-1">
+   	<p style="color: #83929a;">Rs<span id="range_min"></span></p>
+  </div>
+  <div class="col-lg-8 col-md-6 col-xs-10">
+    <div id="slider"></div>
+  </div>
+  <%= form.hidden_field :min_rangefilter %>
+  <%= form.hidden_field :max_rangefilter %>
+  <div class="col-lg-1 col-md-2 col-xs-1">
+    <p style="color: #83929a;">Rs<span id="range_max"></span></p>
+  </div>
+<% end %>

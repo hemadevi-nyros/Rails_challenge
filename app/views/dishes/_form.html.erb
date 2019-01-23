@@ -1,0 +1,13 @@
+<%= form_with model: @dish, local: true do |form| %>
+ <li>
+	 <%= select_tag("dishes_page", options_for_select([["RATING","rating"],["PRICE","price"]]), {prompt: 'SORT BY', :name => "dishes_per_page", :class=>"form-control select_style", id:"filter", remote: true} ) %>
+ </li>
+  <li>
+  	<%= select_tag("dishes_page", options_for_select([["5+","5+"],["7+","7+"],["9+","9+"]]), {prompt: 'ALL RATINGS', :name => "dishes_per_page", :class=>"form-control select_style", id:"rating", remote: true} ) %>
+  </li>
+  <li>
+    <div class="select_box">
+      <%= select_tag("dishes_page", options_for_select([["STARTER",1],["MAIN",2],["DESSERT",3], ["DRINK", 4]]), {prompt: 'ALL DIETARY REQUIREMENTS', :name => "dishes_per_page", :class=>"form-control select_style", id:"tags", remote: true} ) %>
+    </div>
+  </li>
+<% end %>

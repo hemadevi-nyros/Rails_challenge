@@ -1,0 +1,19 @@
+<% dishes.find_all do |dish| %>
+  <div class= "col-lg-6 col-md-6 col-sm-6 col-xs-12 single_dish">
+    <figure>
+      <div class="card">
+       <div class="dish_image">
+          <div class="inner"
+           <img class="card-img-top"><%= link_to(image_tag(dish.image.url(:original),class:"image-size"), dish_path(dish)) %>
+          </div>
+          <div class="rating"><%= image_tag("logos/heart.png") %><span><%= dish.rating%></span><p class="votes">1 VOTE</p></div>
+          <div class="dish_name"><%= dish.name %></div>
+          <div class="dish_price">Rs.<%= dish.price%></div> 
+       </div> 
+       <div class="card-body">
+         <p class="card-text"></p>
+       </div>
+      </div>
+   </figure>
+ </div>
+<% end %> 

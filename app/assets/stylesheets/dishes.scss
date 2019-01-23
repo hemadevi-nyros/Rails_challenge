@@ -1,0 +1,329 @@
+// Place all the styles related to the Dishes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-default {
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+}
+.my_nav{
+    padding-right : 20px;
+}
+.my_nav .logo{
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+	
+}
+header .row{
+    padding-top: 30px;
+}
+
+.search_place{
+    right:0;
+    text-align: right;
+    text-transform: uppercase;
+    color: #babbbf;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    line-height: 46px;
+    vertical-align: middle;
+    font-weight: 600;
+    text-decoration: none;
+}
+.content-top{
+    margin-top: 30px !important;
+}
+.top{
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.sample{
+   display: flex;
+   justify-content: center;
+   resize: vertical;
+   overflow: visible;
+   position: absolute;
+   top: 180px;
+    height: 100%;
+    left: 0;
+    width: 100%;
+}
+.sample h2{
+    float: left;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top_dishes{
+float: left;
+width: 100%;
+height: auto;
+padding: 50px 0px 0px 0px;
+}
+
+.dish_card{
+ margin-right: auto;
+ margin-left: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+.row{
+	margin-left: -15px;
+    margin-right: -15px;
+}
+.dish_card .title{
+	float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7b90a2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 57px;
+    margin-top: 7px;
+}
+ .dish_list{
+    position:relative;
+	float: left;
+    width: 100%;
+}
+.dish_hover{
+    float:left;
+    margin-bottom: 20px;
+}
+
+ figure{
+	position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+ .dish_image{
+  height: 340px;
+  border: 0;
+  float: left;
+  width :100%;
+  margin: 10px auto;
+  background: #fff;
+  overflow: hidden;
+}
+.dish_image:hover{
+ transform: scale(1.1);
+}
+.card .dish_image .image-size{
+ position: absolute;
+ top: -2.92683px;
+ left: 0px;
+ width: 360px;
+ height: 366px;
+ max-width: none;
+ transition: all 0.5s ease;
+}
+.rating{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 15px 20px;
+}
+.rating span{
+   font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: 2px;	
+}
+.rating .votes {
+    float: right;
+    width: 100%;
+    margin: 5px 0px;
+    color: #fff;
+}
+.dish_name{
+	text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 190px;
+    vertical-align: bottom;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    color: #fff;
+}
+.dish_price{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 15px 20px;
+     font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.dish_card .row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+div{
+	display:block;
+}
+
+.results{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 100px !important;
+}
+.dish_result{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dish_filter{
+    padding-right: 0px;
+}
+.filter{
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.filter p:first-child{
+    width: 10%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #83929a;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-left: 0;
+}
+.filter p:nth-child(2) {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 20px 10px;
+}
+.filter p{
+float: left;
+    width: 26%;
+    height: auto;
+    margin: 20px 10px;
+}
+.filter p:last-child {
+    margin-right: 0;
+    width: 33%;
+}
+p{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.search_list{
+    float: left;
+    overflow-y: auto;
+    height: 393px;
+    padding-right: 0;
+}
+.dish_result .single_dish{
+    margin-bottom:20px;
+    padding-left:0;
+    position: relative;
+    min-height: 1px;
+    float:left;
+    padding-right: 15px;
+}
+.dish_result .card .dish_image .image-size{
+ position: absolute;
+ top: -2.92683px;
+ left: 0px;
+ width: 270px;
+ height: 360px;
+ max-width: none;
+ transition: all 0.5s ease;
+}
+.dish_result .dish_image{
+  height: 340px;
+  border: 0;
+  float: left;
+  width :100%;
+  margin: 10px auto;
+  background: #fff;
+  overflow: hidden;
+}
+.search_dish{
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: right;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 3px;
+    left: 120px;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.search_dish .text{
+    width: 66%;
+    height: 50px;
+    box-shadow: none;
+    background: #fff;
+    font-size: 16px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+}
+.btn-default{
+    height:50px;
+    position: relative;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #5ac7f9;
+    border: none;
+    border-left: 2px solid #ededed;
+    background: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: none;
+    box-shadow: none;
+    letter-spacing: 2px;
+}

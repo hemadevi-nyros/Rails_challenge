@@ -1,0 +1,12 @@
+<div class="top">
+  <%= image_tag("logos/1.png") %>
+  <h2 class="heading">
+    What do you <em>really</em> feel like? 
+  </h2>
+  <div class="search">
+    <%= form_tag dishes_path, :method => 'get' do %>
+      <%= text_field_tag :search, params[:search] %>
+     <%= submit_tag 'Search', name: nil %>
+   <% end %>
+  </div>
+</div> 
