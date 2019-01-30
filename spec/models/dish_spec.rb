@@ -41,21 +41,5 @@ RSpec.describe Dish, type: :model do
       dish = Dish.new(name: 'Name', price: 100, rating: 8, tag_id: 3, image_file_name: "sample.jpeg", image_content_type: "image/jpeg", image_file_size: 00000).save
       expect(dish).to eq(true)
     end
-
-    it 'ordering dish by price' do
-      dish = Dish.order(:price)
-    end
-
-    it 'ordering dish by rating' do
-      dish = Dish.order(:rating)
-    end
-
-    it 'searching dish by name' do
-      dish = Dish.where(:name => "Name")
-    end
-    
-    it 'searching dishes by tag' do
-      dish = Dish.where(:tag_name => "STARTER")
-    end
   end
 end
