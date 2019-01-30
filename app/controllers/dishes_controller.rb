@@ -25,6 +25,19 @@ class DishesController < ApplicationController
      format.html
     end
   end
+
+  def create
+    @dish = Dish.new(dish_params)
+    respond_to do |format|
+      if @dish.save
+        format.html { redirect_to @dish, notice: 'Dish was successfully created.' }
+        format.json { render :show, status: :created, location: @dish}
+      else
+        format.html { render :new }
+        format.json { render json: @dish.errors, status: :unprocessable_entity }
+      end
+    end
+  end
   
   private
   

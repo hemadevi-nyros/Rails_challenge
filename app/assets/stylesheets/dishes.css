@@ -39,6 +39,9 @@ header .row{
  position: relative;
   overflow: hidden;
 }
+.top img{
+ width:100%;
+}
 .sample{
  display: flex;
  justify-content: center;
@@ -208,6 +211,7 @@ div{
  width: 100%;
  height: auto;
  margin-top: 100px !important;
+ overflow: hidden;
 }
 .dish_result{
  margin-right: auto;
@@ -454,8 +458,8 @@ form{
  transition: all 0.5s ease;
 }
 #map{
- width: 650px;
- height: 550px;
+ width: 600px;
+ height: 500px;
  margin-top: 20px;
  margin-left: 25px;
  margin-right: 10px;
